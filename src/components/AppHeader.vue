@@ -1,36 +1,41 @@
 <script>
+import AppLinks from './AppLinks.vue';
+
 export default {
     name: "AppHeader",
+    components: {
+        AppLinks
+    },
     data() {
         return {
             HeaderLinks: [
                 {
-                    title: "home",
+                    title: "HOME",
                     image: ""
                 },
                 {
-                    title:
-                    image
+                    title:"PAGES",
+                    image:""
                 },
                 {
-                    title:
-                    image
+                    title:"MENU",
+                    image: ""
                 },
                 {
-                    title:
-                    image
+                    title:"",
+                    image:"logo.png"
                 },
                 {
-                    title:
-                    image
+                    title:"EVENT",
+                    image:""
                 },
                 {
-                    title:
-                    image
+                    title:"BLOG",
+                    image:""
                 },
                 {
-                    title:
-                    image
+                    title:"LANDING",
+                    image:""
                 }
                 
             ]
@@ -42,10 +47,15 @@ export default {
 
 <template>
     <div class="header">
-       
+       <AppLinks v-for="(link, index) in HeaderLinks" :key="index" :title="link.title"/>
     </div>
     
 </template>
 
 <style scoped>
+.header {
+    display: flex;
+    flex-direction: row;
+    
+}
 </style>

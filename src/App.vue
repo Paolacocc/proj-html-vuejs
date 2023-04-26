@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-ciao
+<AppHeader />
 
 </template>
 
