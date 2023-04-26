@@ -23,7 +23,7 @@ export default {
                 },
                 {
                     title:"",
-                    image:"logo.png"
+                    image:"h5-logo-divided-header.png"
                 },
                 {
                     title:"EVENT",
@@ -47,7 +47,7 @@ export default {
 
 <template>
     <div class="header">
-       <AppLinks v-for="(link, index) in HeaderLinks" :key="index" :title="link.title"/>
+       <AppLinks v-for="(link, index) in HeaderLinks" :key="index" :title="link.title" :image="link.image"/>
     </div>
     
 </template>
@@ -56,6 +56,6 @@ export default {
 .header {
     display: flex;
     flex-direction: row;
-    
+    background-color: black;
 }
 </style>

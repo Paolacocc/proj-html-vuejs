@@ -1,9 +1,13 @@
 <script>
+import { getImagePath } from '../utils/helpers';
 export default {
     name: "AppLinks",
     props: {
         title: String,
         image: String,
+    },
+    methods: {
+        getImagePath
     }
 
 }
@@ -11,16 +15,12 @@ export default {
 </script>
 
 <template>
-    <!-- <div class="header-links" v-if="title === ''">
-            <img :src="image" alt="">
-        </div>
-        <div class="header-links" v-else-if="image === ''">
-            <h6 class="title">{{ title }}</h6>
-        </div> -->
     
         <div class="header-links">
-            <img :src="image" alt="">
-            <h6 class="title">{{ title }}</h6>
+            <img :src="getImagePath(image)" alt="">
+            <h6 class="title">
+                <a href="">{{ title }}</a>
+            </h6>
         </div>
 
 </template>
@@ -28,5 +28,10 @@ export default {
 <style scoped>
 .header-links {
     padding: 10px;
+    color: white;
+}
+img {
+    width: 150px;
+  
 }
 </style>
