@@ -89,7 +89,7 @@ export default {
 
     .header-top {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         padding-top: 30px;
         height: 150px;

@@ -1,9 +1,19 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
-
+import AppEvents from './components/AppEvents.vue';
+import { getImagePath } from './utils/helpers';
 export default {
     components: {
-        AppHeader
+        AppHeader,
+        AppEvents
+    },
+    data() {
+        return {
+        
+        }
+    },
+    methods: {
+        getImagePath
     }
 }
 
@@ -11,6 +21,7 @@ export default {
 
 <template>
 <AppHeader />
+<AppEvents />
 
 </template>
 
