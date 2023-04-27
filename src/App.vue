@@ -1,11 +1,13 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
 import AppEvents from './components/AppEvents.vue';
+import AppSpecials from './components/AppSpecials.vue'
 import { getImagePath } from './utils/helpers';
 export default {
     components: {
         AppHeader,
-        AppEvents
+        AppEvents,
+        AppSpecials
     },
     data() {
         return {
@@ -22,6 +24,7 @@ export default {
 <template>
 <AppHeader />
 <AppEvents />
+<AppSpecials />
 
 </template>
 
