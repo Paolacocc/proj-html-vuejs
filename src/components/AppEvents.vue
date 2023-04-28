@@ -39,10 +39,15 @@ export default {
 
 <style scoped lang="scss">
 @use "../style/partials/variables" as *;
+@use "../style/general.scss" as *;
 
-img {
-    padding: 10px 5px;
-    width: calc(100% / 4);
+.img-events {
+
+    img {
+        padding: 10px 5px;
+        width: calc(100% / 4);
+
+    }
 }
 
 .quotes {
@@ -51,7 +56,12 @@ img {
     width: 100%;
     background-position: center;
     height: 400px;
-
+    .pizza-circle {
+            position: absolute;
+            top: 90%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+        }
     .quotes-text {
 
         position: absolute;
@@ -71,24 +81,7 @@ img {
 
     }
 
-    .pizza-circle {
-        position: relative;
-        background-color: $lightgray;
-        border-radius: 50%;
-        width: 70px;
-        height: 70px;
-        top: 80%;
-        left: 95%;
-
-        .pizza-sm {
-            width: 50%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
-        }
-    }
+  
 
 }
 </style>

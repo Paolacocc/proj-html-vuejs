@@ -50,7 +50,7 @@ export default {
 
         <div class="container">
             <div class="header-top" pt-4>
-                <button class="btn">
+                <button class="_ms-btn">
                     <a href="">
                         ORDER ONLINE
                     </a>
@@ -94,10 +94,12 @@ export default {
         padding-top: 30px;
         height: 150px;
 
-        .btn {
-            color: white;
+        ._ms-btn {
             background-color: $orange;
-            color: white;
+            border-style: none;
+            padding: 5px 20px;
+            font-weight: 200;
+            
            
 
             a {
