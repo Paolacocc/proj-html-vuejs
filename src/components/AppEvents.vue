@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-    <div class="img-events">
+    <div class="img-events d-flex">
         <img src="../assets/img/h3-img-1.jpg" alt="">
         <img src="../assets/img/h3-img-2.jpg" alt="">
         <img src="../assets/img/h3-img-3.jpg" alt="">
@@ -41,13 +41,14 @@ export default {
 @use "../style/partials/variables" as *;
 @use "../style/general.scss" as *;
 
+
 .img-events {
 
     img {
         padding: 10px 5px;
         width: calc(100% / 4);
-
     }
+
 }
 
 .quotes {
@@ -56,12 +57,14 @@ export default {
     width: 100%;
     background-position: center;
     height: 400px;
+
     .pizza-circle {
-            position: absolute;
-            top: 90%;
-            left: 90%;
-            transform: translate(-50%, -50%);
-        }
+        position: absolute;
+        top: 90%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+    }
+
     .quotes-text {
 
         position: absolute;
@@ -81,7 +84,7 @@ export default {
 
     }
 
-  
+
 
 }
 </style>
